@@ -2,6 +2,8 @@
 
 Ce projet est une application de tableau de bord permettant de visualiser et d'interagir avec des données d'activité industrielle. Cette documentation vise à fournir des informations détaillées sur l'architecture, les choix technologiques et les bonnes pratiques utilisées dans ce projet.
 
+L'application est déployée via GitHub Pages à l'adresse suivante : [lien](https://remiphilippot.github.io/dashboad-app/).
+
 ## Architecture
 
 L'architecture de cette application suit une structure modulaire et basée sur des composants réutilisables. Voici un aperçu de la structure des répertoires :
