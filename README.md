@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Dashboard Application
 
-## Getting Started
+Ce projet est une application de tableau de bord permettant de visualiser et d'interagir avec des données d'activité industrielle. Cette documentation vise à fournir des informations détaillées sur l'architecture, les choix technologiques et les bonnes pratiques utilisées dans ce projet.
 
-First, run the development server:
+## Architecture
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+L'architecture de cette application suit une structure modulaire et basée sur des composants réutilisables. Voici un aperçu de la structure des répertoires :
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+-   `components/`: Contient tous les composants réutilisables utilisés dans l'application.
+-   `lib/`: Comprend les fichiers de logique métier, tels que les types de données et les fonctions d'API.
+-   `pages/`: Contient les pages de l'application, qui sont des composants React correspondant à chaque route.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Choix technologiques
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Cette application est développée en utilisant les technologies suivantes :
 
-## Learn More
+-   **React**: Utilisé pour la construction de l'interface utilisateur (UI) et la gestion de l'état de l'application.
+-   **Tailwind CSS**: Utilisé pour la gestion des styles et le développement d'une interface utilisateur responsive et esthétique.
+-   **Chart.js**: Bibliothèque de visualisation de données utilisée pour créer des graphiques dynamiques dans le tableau de bord.
 
-To learn more about Next.js, take a look at the following resources:
+## Bonnes pratiques
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Pour assurer la qualité et la maintenabilité du code, plusieurs bonnes pratiques sont suivies dans ce projet :
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+-   **Modularité**: Le code est divisé en composants réutilisables et bien définis, favorisant ainsi la modularité et la réutilisation du code.
+-   **Typescript**: TypeScript est utilisé pour ajouter des types statiques au JavaScript, ce qui rend le code plus sûr et plus prévisible.
+-   **Gestion de l'état**: L'état de l'application est géré de manière efficace en utilisant le hook `useState` de React et en suivant le principe de l'immutabilité des données.
+-   **Documentation**: Une documentation détaillée est fournie pour expliquer l'architecture, les choix technologiques et les bonnes pratiques utilisées dans le projet.
 
-## Deploy on Vercel
+## Utilisation
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Pour exécuter l'application localement, suivez ces étapes :
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. Clonez ce dépôt sur votre machine locale.
+2. Installez les dépendances en exécutant `npm install`.
+3. Lancez l'application en exécutant `npm start`.
+4. Accédez à `http://localhost:3000` dans votre navigateur pour voir l'application en action.
